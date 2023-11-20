@@ -1,0 +1,526 @@
+@charset "UTF-8";
+*{box-sizing: border-box;}
+       /*메인페이지*/
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            header {
+                position: relative;
+                height: 300px;
+                background: linear-gradient(to right, rgba(97, 144, 232, 0.5), rgba(167, 191, 232, 1));   
+            }
+
+            /*로고 조정*/
+            .logo {
+                width: 270px;
+                height: auto;
+                position: relative;
+                top: 30px;
+                left: 40px;
+            }
+   
+            .use {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+            }
+   
+            /*아이콘+글자 3묶음 전체 위치 및 사이즈 조정*/
+            .use li {
+                position: relative;
+                bottom: 152px;
+                left: 1560px;
+                margin-right: 33px;
+                text-align: center;
+                font-size: 13px;
+                font-weight: bold;
+                color:#3a3b3d;
+            }
+   
+            /****동작 부분 없음 (혹시 몰라 남겨둠)****/
+            .use p {
+                position: relative;
+                left: 10px;
+                top: 10px;
+                font-size: 10px;
+                margin-right: 10px;
+            }
+            
+            /*우측 상단 login/logout 부터 like까지 단일 조절  */
+            .login {
+                width: 42px;
+                height: auto;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            .logout {
+                width: 42px;
+                height: auto;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            .user{
+                width: 42px;
+                height: auto;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            .like{
+                width: 42px;
+                height: auto;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+ /*--------------------여기까지가 상단부-----------------------------------------------------*/
+            
+            /*회원가입 박스*/
+            .transparent-section {
+                border: 3px;
+                border-radius: 10px; 
+                border-style:solid;
+                border-color: #002936;
+                box-shadow:  5px 5px 17px rgba(0, 0, 0, 0.8);
+                background:rgba(241, 241, 241, 0.8);
+                position: absolute;	
+                top: 36%;
+                left: 32%;
+                width: 35%;
+                height: 60%
+            }
+            
+             /*회원가입 글씨*/
+            #registerH h1 {
+                position: relative;
+                left: 38%;
+                top: 50px;
+                color: #3b3535;
+                font-size: 40px;
+            }
+
+             /*회원가입 페이지 배경 도시 이미지*/
+            #createBody {
+                background-image: url('../img/가입화면배경.png');
+                background-size: 100%;
+            }
+            /*회웝가입 창 라벨 스타일*/
+            .registerinputstyle label {
+                font-size: 14px;
+                font-weight: bold;
+                text-align: right;
+                color: #3b3535;
+                display: inline-block;
+                width: 200px;
+                height: 40px;
+                position: relative;
+                top: 90px;
+               }
+
+            /*회원가입 입력창 스타일*/
+            .registerinputstyle input {
+                position: relative;
+                top: 90px;
+                width: 250px;
+                height: 30px;
+                margin-top: 5px;
+                border-color: #d6d6d6;
+                border-radius: 2px;
+                border-width: 1px;
+                display: inline-block;
+            }
+            /*회원가입 입력창 pacleholder 글씨 크기*/ 
+            .registerinputstyle ::placeholder {
+                font-size: 11px;
+            }
+            /*회원가입 입력창 입력 글씨 시작 위치 조정*/
+            input[type="text"], input[type="password"], input[type="email"] {
+                padding-left: 8px;
+            }
+
+            /*주소 동 입력창 스타일 조정*/
+            #ADDRESS {
+                position: relative;
+                left: 206px;
+                top: 70px;
+                width: 250px;
+                height: 30px;       
+            }
+            
+            /*중복체크 버튼 및 폰트 스타일 조정*/
+            #checkButton{
+                border:none;
+                border-radius:3px;
+                margin-left:15px;
+                margin-left:15px;
+                font-size : 13px;
+                background:linear-gradient(45deg,violet,orange);
+                cursor:pointer;
+                font-weight: bold;
+                color: #3b3535;
+                width: 90px;
+                height: 30px;
+                font-weight: bold;
+             }
+            /*비밀번호 확인 버튼 및 폰트 스타일 조정*/
+            #checkPwButton {
+                border:none;
+                border-radius:3px;
+                margin-left:15px;
+                font-size: 12px;
+                margin-right : 20px;
+                background:linear-gradient(45deg,violet,orange);
+                cursor:pointer;
+                font-weight: bold;
+                color: #3b3535;
+                width: 90px;
+                height: 30px;
+                font-weight: bold;
+            }
+            /*비밀번호 오기입 시 비밀번호 칸 아래 조건문장 생성*/
+            #pm {
+                color: rgb(255, 0, 0);
+                font-weight: bold;
+                font-size: 11px;
+                position: relative;
+                top: 83px;
+                text-align: center;
+              }
+
+            /*회원가입 버튼 및 폰트 스타일 조정*/
+            #createIdButton{
+                border:none;
+                border-radius:3px;
+                background:linear-gradient(45deg,violet,orange);
+                cursor:pointer;
+                font-weight: bold;
+                color: #3b3535;
+                width: 120px;
+                height: 40px;
+                font-weight: bold;
+                position: relative;
+                left: 283px;
+                top: 110px;
+            }
+            /*회원가입 버튼 마우스on 효과*/ 
+            #createIdButton:hover {
+                background: linear-gradient(45deg,violet,pink);
+                color:#4e1a03;
+                box-shadow : 5px 5px 3px rgba(1, 1, 2, 0.5);
+            }	
+            /*가입 정보 라벨 및 입력창 하나씩 조절*/
+            #d0 {
+            }  
+            #d1 {
+            }
+            #d2 {   
+            }
+            #d3 {   
+            } 
+            #d4 {       
+            } 
+            #d5 {        
+            }
+            #d6 {
+            }
+            #registerH { 
+            }
+
+             /************************회원가입 성공 여부 화면********************************/
+             .register_error img {
+                position: relative;
+                top: 250px;
+                left: 822px;
+                width: 12%;
+                height: auto;
+            }
+            .register_error p {
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                color: #516786;
+                position: relative;
+                top: 300px;
+            }
+            .register_success img {    
+                opacity: 0;
+                transition: opacity 0.5s;
+                /*불투명도를 0으로 초기화 후 0.5초에 걸쳐 투명하게 만드는 효과*/
+                position: relative;
+                top: 250px;
+                left: 500px;
+                width: 12%;
+                height: auto;
+            }
+            .register_success p {
+                text-align: center;
+                font-size: 35px;
+                font-weight: bold;
+                color: #516786;
+                position: relative;
+                top: 300px;
+            }
+
+/*-------------------------여기까지 회원가입 탭 중앙 화면------------------------------*/
+
+
+            /*메인페이지 추천 매물 정보*/
+            #mainDiv{
+                display: flex;
+                flex-direction: row;
+            }
+
+             /*메인페이지 추천 매물 글씨*/
+            #recommend h1 {
+                position: relative;
+                top: 50px;
+                margin-left: 110px;
+                color: #3d71cbcc;
+            }
+
+            /*추천 매물을 담을 테이블 (수정이 필요할 것으로 예상)*/
+            #mainDiv table {
+                margin-left: 100px;
+                width: 500px;
+            }
+
+            /*추천매물이 없습니다 글씨*/
+            #noAllRealestate h1 {   
+                color: #8eb4f5cc;
+                font-size: 50px;
+                position:absolute;
+                top: 450px;
+                left: 700px;
+            }
+            /*추천매물 없다는 이미지*/
+            .norealestete {
+                width: 250px;
+                height: auto;
+                margin-left: 700px;
+                position: absolute;
+                top: 550px;
+            }
+            /*추천 매물 이미지 크기*/    
+            #imageSize{
+                width:200px;
+                height:300px;
+            }
+
+/*-------------------------여기까지 메인화면------------------------------*/
+
+            
+               
+            .img-container {
+                align-items:center;
+                display:flex;
+                margin-left:300px;
+            }
+               
+               .img-container img {
+                      margin-right:50px;
+               
+               }
+               
+               .image {
+                   width:300px;
+                   height:300px;
+                   margin: 10px;
+               }
+               
+               #prevPage {
+                   position: relative;
+                   padding: 10px 20px;
+                   color: black;
+                   background-color:white;
+                   border: none;
+                   cursor: pointer;
+                   
+               
+               }
+               
+               #nextPage {
+                   margin:100px;
+               
+               }
+               
+                           
+               
+               
+               
+ /*------------------로그인 화면--------------------------*/             
+            #loginH h1 {
+                position: relative;
+                left: 40%;
+                top: 145px;
+                color: #3b3535;
+                font-size: 40px;
+            }
+
+              
+               
+            #loginButton {
+                border:none;
+                border-radius:3px;
+                margin-left:240px;
+                margin-top: 255px;
+                font-size : 13px;
+                background:linear-gradient(45deg,violet,orange);
+                cursor:pointer;
+                font-weight: bold;
+                color: #3b3535;
+                width: 90px;
+                height: 30px;
+                font-weight: bold;
+            }
+            
+            #createButton {
+                border:none;
+                border-radius:3px;
+                margin-left:15px;
+                margin-left:15px;
+                font-size : 13px;
+                background:linear-gradient(45deg,violet,orange);
+                cursor:pointer;
+                font-weight: bold;
+                color: #3b3535;
+                width: 90px;
+                height: 30px;
+                font-weight: bold;
+            }
+               
+               
+            #loginDiv label {
+                font-size: 14px;
+                font-weight: bold;
+                text-align: right;
+                color: #3b3535;
+                display: inline-block;
+                width: 200px;
+                height: 40px;
+                position: relative;
+                top: 220px;
+                margin-left: 22px;
+            }
+
+            #loginDiv input {
+                position: relative;
+                top: 220px;
+                width: 250px;
+                height: 30px;
+                margin-top: 0px;
+                border-color: #d6d6d6;
+                border-radius: 2px;
+                border-width: 1px;
+                display: inline-block; 
+            }
+               
+               #loginBody {
+                background-image: url('../img/가입화면배경.png');
+                background-size: 100%;
+               }
+               
+
+
+        /**********************로그인 성공 여부 화면********************************/
+
+            .login_error img {
+                position: relative;
+                top: 250px;
+                left: 822px;
+                width: 12%;
+                height: auto;
+            }
+            .login_error p {
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                color: #516786;
+                position: relative;
+                top: 300px;
+                }
+                                
+            .login_success img {
+                position: relative;
+                top: 250px;
+                left: 835px;
+                width: 12%;
+                height: auto;
+            }
+            .login_success p {
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                color: #516786;
+                position: relative;
+                top: 300px;
+            }
+
+ /*-----------------------------여기까지 로그인 화면---------------------------------------------*/   
+
+               
+               /*회원탈퇴*/
+            #deleteBody {
+                background-image: url('../img/delete.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height:100vh;
+            }
+               
+            #deleteId {
+               margin-left:46px;
+               margin-right:50px;
+            }
+            
+            #deletePw {
+                margin-left:30px;
+                margin-right:50px;
+            }
+                
+            #deleteButton {
+                border:none;
+                border-radius:5px;
+                padding:10px;
+                margin-left :130px;
+                margin-bottom : 20px;
+                background:linear-gradient(45deg,orange,red);
+                color:white;
+                cursor:pointer;   
+            }
+                
+            #deleteButton:hover {
+                background: white;
+                color:red;
+                box-shadow : 5px 5px 3px rgba(1, 1, 2, 0.5);
+            }
+                  
+                  
+            footer {
+                float:bottom;
+                background-color: #989898;
+                height: 79px;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+                font-size: 14px;
+            }
+            
+            footer p {
+                color: #383737;
+                font-weight: bold;
+                position:relative;
+                top: 10px;
+            }
+                  
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+              

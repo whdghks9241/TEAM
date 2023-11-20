@@ -1,0 +1,98 @@
+@charset "UTF-8";
+    *{box-sizing: border-box;}
+
+.container_right {
+    display: inline-block;
+    margin: 20px;
+    width: 75%;
+    height: 100%;
+}
+
+.titleText {
+	position: relative;
+	top: 42px;
+	font-size: 25px;
+	margin-left: 55px
+}
+
+
+.main {
+	float: left;
+	width: 85%;
+	height: 900px;
+}
+
+/*찜한 매물 중앙 컨텐츠에 있는 가로 띠 아래 부분*/
+.width_line {
+	width: 96%;
+    position: relative;
+    left: 30px;
+    top: 48px;
+}
+
+
+
+
+
+.InterAdItem_box {
+	border: 2px solid #dddddd;
+	border-radius: 10px;
+	box-shadow: 5px 5px 17px rgba(0, 0, 0, 0.2);
+	width: 1000px;
+	height: 630px;
+	position: relative;
+	left: 210px;
+	top: 65px;
+}
+
+/*내정보 아이디~주소 입력창 입력 및 수정 부분 조정*/
+.InterAdItem {
+	text-align: center;
+	position: relative;
+	right: 3%;
+	margin-top: 13%;
+}
+
+ /*내정보 리스트 라벨 크기 및 정렬 부분*/
+ .InterAdItem label {
+	font-size: 14px;
+	font-weight: 700;
+	text-align: right;
+	color: #1b1b1b;
+	display: inline-block;
+	width: 93px;
+	height: 40px;
+}
+/*내정보 리스트 input 입력칸 조절 부분*/
+.InterAdItem input {
+	width: 250px;
+	height: 28px;
+	margin-top: 5px;
+	border-color: #d6d6d6;
+	border-radius: 2px;
+	border-width: 1px;
+}
+/*내 정보 리스트 placeholder 입력 전 안내문자 크기 조절*/
+.InterAdItem ::placeholder {
+	font-size: 11px;
+}
+
+/*내정보 리스트 수정하기, 회원탈퇴 버튼 조정*/
+.InterAdItem button {
+	width: 59px;
+	height: 22px;
+	border-radius: 3px;
+	border-width: 1px;
+	background-color:rgb(124, 124, 124); 
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 600;
+	position: relative;
+	left: 108px;
+}
+
+
+
+
+
+
